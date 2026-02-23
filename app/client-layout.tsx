@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 
 export default function ClientLayout({
@@ -5,10 +6,9 @@ export default function ClientLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="flex flex-col min-h-screen text-sm">
-      <div className="max-w-175 w-full mx-auto px-4 grow">
-        <Header />
-        <main>{children}</main>
-      </div>
+      <Header />
+      <main className="max-w-175 w-full mx-auto px-4 grow">{children}</main>
+      <Footer />
     </div>
   );
 }
