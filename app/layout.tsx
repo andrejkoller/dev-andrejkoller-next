@@ -13,12 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "Andrej Koller",
   description:
-    "I'm a design engineer specializing in web and mobile applications.",
+    "Andrej Koller is a software engineer from Ekibastuz, Kazakhstan. Based in Passau, Germany.",
 };
 
 export default function RootLayout({

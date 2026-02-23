@@ -34,3 +34,8 @@ kbd,
 samp {
   font-family: var(--font-geist-mono);
 }
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
