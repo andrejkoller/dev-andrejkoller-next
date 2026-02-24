@@ -10,7 +10,7 @@ export default function Home() {
           Based in Passau, Germany.
         </p>
       </section>
-      <section className="mb-8 fade-in delay-4">
+      <section className="mb-12 fade-in delay-4">
         <h2 className="text-sm font-bold mb-4">Featured</h2>
         <p>
           <span className="text-(--secondary-foreground)">2026</span>
@@ -19,7 +19,7 @@ export default function Home() {
         </p>
       </section>
       <hr className="border-t border-(--secondary-border) my-12"></hr>
-      <div>
+      <div className="mb-16">
         <h3 className="text-sm font-bold mb-8">Product</h3>
         <div className="mb-24">
           <p className="mb-4">
@@ -50,7 +50,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div>
+      <div className="mb-16">
         <h3 className="text-sm font-bold mb-8">Branding</h3>
         <div className="mb-24">
           <p className="mb-4">
