@@ -25,14 +25,15 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--font-geist-mono);
-}
-
-code,
-pre,
-kbd,
-samp {
-  font-family: var(--font-geist-mono);
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    Liberation Mono,
+    Courier New,
+    monospace;
 }
 
 ::selection {

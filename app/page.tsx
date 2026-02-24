@@ -3,8 +3,8 @@ export default function Home() {
     <>
       <section className="mb-12 fade-in delay-1">
         <p className="mb-4 text-[#666]">
-          <span className="text-white">Andrej Koller</span> is a software
-          engineer from Ekibastuz, Kazakhstan.
+          <span className="text-white">Andrej Koller</span> is a designer and
+          frontend engineer from Ekibastuz, Kazakhstan.
         </p>
         <p className="mb-8 text-[#666]">Based in Passau, Germany.</p>
       </section>
