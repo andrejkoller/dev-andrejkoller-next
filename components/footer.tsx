@@ -3,7 +3,7 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <footer className="w-full border-t border-(--secondary-border) mt-8 h-50 fade-in delay-6">
-      <div className="max-w-175 w-full mx-auto px-4 h-full flex justify-between items-center">
+      <div className="max-w-175 w-full mx-auto px-4 h-full flex flex-col justify-center gap-4 min-[375px]:flex-row min-[375px]:gap-0 min-[375px]:justify-between items-center">
         <div className="flex space-x-8">
           <Link
             className="hover:text-(--hover-foreground)"

@@ -13,28 +13,30 @@ export const ThemeToggle = () => {
   return (
     <div
       onClick={toggleTheme}
-      className="fixed top-5 right-5 md:top-12.5 md:right-12.5 flex items-center justify-end text-[12px] leading-3 cursor-pointer select-none"
+      className="flex items-center justify-end text-xs leading-3 cursor-pointer select-none gap-2"
     >
-      <span
-        className={`absolute right-5 transition-all duration-200
-          ${isLight ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-1.25"}
-        `}
-      >
-        Dark
-      </span>
+      <div className="relative w-8 h-3 flex items-center justify-end">
+        <span
+          className={`transition-all duration-200
+            ${isLight ? "opacity-100" : "opacity-0"}
+          `}
+        >
+          Dark
+        </span>
 
-      <span
-        className={`absolute right-5 transition-all duration-200
-          ${isDark ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1.25"}
-        `}
-      >
-        Light
-      </span>
+        <span
+          className={`absolute transition-all duration-200
+            ${isDark ? "opacity-100" : "opacity-0"}
+          `}
+        >
+          Light
+        </span>
+      </div>
 
       <button
         aria-label="Toggle Theme"
-        className={`ml-2.5 h-3.25 w-3.25 rounded-full border transition-all duration-200 border-(--border)
-          ${isDark ? "bg-(--border)" : "bg-transparent"}
+        className={`h-3.25 w-3.25 rounded-full border transition-all duration-200 border-(--border)
+          ${isDark ? "bg-(--foreground)" : "bg-transparent"}
         `}
       />
     </div>

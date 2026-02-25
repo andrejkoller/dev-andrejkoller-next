@@ -23,7 +23,7 @@ export default function Home() {
         <h3 className="text-sm font-bold mb-8">Product</h3>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-(--secondary-foreground)">2026</span>
+            <span className="text-(--secondary-foreground)">2027</span>
             <span className="text-(--secondary-foreground) mx-2">—</span>
             <span>Sophia.js</span>
           </p>
@@ -54,7 +54,7 @@ export default function Home() {
         <h3 className="text-sm font-bold mb-8">Branding</h3>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-(--secondary-foreground)">2027</span>
+            <span className="text-(--secondary-foreground)">2028</span>
             <span className="text-(--secondary-foreground) mx-2">—</span>
             <span>Font</span>
           </p>
