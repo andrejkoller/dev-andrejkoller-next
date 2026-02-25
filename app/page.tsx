@@ -66,7 +66,7 @@ export default function Home() {
           I design and build modern, performant web interfaces using HTML, SCSS,
           TypeScript, and frameworks like Angular, React, Next.js, and Vue.
           Focused on clean architecture, refined UI systems, and thoughtful
-          digital experiences crafted with TailwindCSS and Figma.{" "}
+          digital experiences crafted with TailwindCSS and Figma.
         </p>
       </section>
       <section className="mb-12 fade-in delay-6">
