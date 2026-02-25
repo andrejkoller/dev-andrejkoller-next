@@ -13,7 +13,7 @@ export const ThemeToggle = () => {
   return (
     <div
       onClick={toggleTheme}
-      className="flex items-center justify-end text-xs leading-3 cursor-pointer select-none gap-2"
+      className="flex items-center justify-end text-sm leading-3 cursor-pointer select-none gap-2"
     >
       <div className="relative w-8 h-3 flex items-center justify-end">
         <span
@@ -32,13 +32,6 @@ export const ThemeToggle = () => {
           Light
         </span>
       </div>
-
-      <button
-        aria-label="Toggle Theme"
-        className={`h-3.25 w-3.25 rounded-full border transition-all duration-200 border-(--border)
-          ${isDark ? "bg-(--foreground)" : "bg-transparent"}
-        `}
-      />
     </div>
   );
 };
