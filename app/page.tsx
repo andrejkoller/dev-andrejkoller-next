@@ -61,6 +61,15 @@ export default function Home() {
         </div>
       </div>
       <section className="mb-12 fade-in delay-6">
+        <h2 className="text-sm font-bold mb-4">Skills & Technologies</h2>
+        <p className="mb-4 text-(--secondary-foreground)">
+          I design and build modern, performant web interfaces using HTML, SCSS,
+          TypeScript, and frameworks like Angular, React, Next.js, and Vue.
+          Focused on clean architecture, refined UI systems, and thoughtful
+          digital experiences crafted with TailwindCSS and Figma.{" "}
+        </p>
+      </section>
+      <section className="mb-12 fade-in delay-6">
         <h2 className="text-sm font-bold mb-4">Ongoing Projects</h2>
         <p className="mb-4 text-(--secondary-foreground)">
           Builds ongoing projects spanning music, products, and open source,
