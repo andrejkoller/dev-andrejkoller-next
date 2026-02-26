@@ -1,3 +1,7 @@
+"use client";
+
+import { ThemeToggle } from "@/components/theme/theme-toggle";
+
 export default function Home() {
   return (
     <>
@@ -6,10 +10,13 @@ export default function Home() {
           <span className="text-(--foreground)">Andrej Koller</span> is a
           designer and frontend engineer from Ekibastuz, Kazakhstan.
         </p>
-        <p className="mb-8 text-(--secondary-foreground)">
+        <p className="mb-4 text-(--secondary-foreground)">
           Based in Passau, Germany.
         </p>
       </section>
+      <div className="mb-12">
+        <ThemeToggle />
+      </div>
       <section className="mb-12 fade-in delay-4">
         <h2 className="text-sm font-bold mb-4">Featured</h2>
         <p>
