@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="w-full border-t border-(--secondary-border) mt-8 h-50 fade-in delay-6">
-      <div className="max-w-175 w-full mx-auto px-4 h-full flex flex-col justify-center gap-4 min-[375px]:flex-row min-[375px]:gap-0 min-[375px]:justify-between items-center">
+    <footer className="w-full border-t border-(--secondary-border) h-50 fade-in delay-6">
+      <div className="max-w-175 w-full mx-auto px-4 h-full flex flex-col justify-center items-center gap-12 min-[425px]:flex-row min-[425px]:gap-0 min-[425px]:justify-between max-[425px]:items-start">
         <div className="flex space-x-8">
           <Link
             className="hover:text-(--hover-foreground)"
