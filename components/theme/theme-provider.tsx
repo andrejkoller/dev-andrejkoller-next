@@ -36,6 +36,10 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     document.documentElement.dataset.theme = theme;
   }, [theme]);
 
+  useEffect(() => {
+    document.body.classList.add("theme-transitions");
+  }, []);
+
   const toggleTheme = useCallback(() => {
     const newTheme = theme === "light" ? "dark" : "light";
     localStorage.setItem("theme", newTheme);
