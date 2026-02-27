@@ -25,7 +25,7 @@ export default function Home() {
           <span>Athanasa</span>
         </p>
       </section>
-      <hr className="border-t border-(--secondary-border) my-12"></hr>
+      <hr className="border-t border-(--border) my-12"></hr>
       <div className="mb-16">
         <h3 className="text-sm font-bold mb-8">Product</h3>
         <div className="mb-24">

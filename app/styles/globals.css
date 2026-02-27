@@ -4,8 +4,7 @@
   --background: #ffffff;
   --foreground: #000000;
   --secondary-foreground: #777777;
-  --border: #777777;
-  --secondary-border: #cccccc;
+  --border: #cccccc;
   --hover-foreground: #1f2937;
 }
 
@@ -13,8 +12,7 @@
   --background: #000000;
   --foreground: #ffffff;
   --secondary-foreground: #666666;
-  --border: #666666;
-  --secondary-border: #333333;
+  --border: #333333;
   --hover-foreground: #d1d5dc;
 }
 
