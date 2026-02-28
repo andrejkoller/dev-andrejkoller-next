@@ -18,6 +18,19 @@ export default function Home() {
         <ThemeToggle />
       </div>
       <section className="mb-12 fade-in delay-4">
+        <div className="flex justify-between items-baseline border-b border-(--border) expertise-item">
+          <div>
+            <h2 className="font-normal">ICUnet</h2>
+            <p className="text-(--secondary-foreground)">
+              Software Developer, Training
+            </p>
+          </div>
+          <div className="text-(--secondary-foreground) flex items-center whitespace-nowrap">
+            2022-2025
+          </div>
+        </div>
+      </section>
+      <section className="mb-12 fade-in delay-4">
         <h2 className="text-sm font-bold mb-4">Featured</h2>
         <p>
           <span className="text-(--secondary-foreground)">2026</span>
@@ -88,6 +101,7 @@ export default function Home() {
               className="hover:text-(--hover-foreground)"
               href="https://linktr.ee/athanasa"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Athanasa
             </a>
@@ -97,6 +111,7 @@ export default function Home() {
               className="hover:text-(--hover-foreground)"
               href="https://linktr.ee/fadinghell"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Fading Hell
             </a>
@@ -106,6 +121,7 @@ export default function Home() {
               className="hover:text-(--hover-foreground)"
               href="https://linktr.ee/prettyswing"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Pretty Swing
             </a>
