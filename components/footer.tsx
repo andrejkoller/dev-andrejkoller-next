@@ -9,6 +9,7 @@ export const Footer = () => {
             className="hover:text-(--hover-foreground)"
             href="https://x.com/andrejkoller"
             target="_blank"
+            rel="noopener noreferrer"
           >
             𝕏
           </Link>
@@ -16,6 +17,7 @@ export const Footer = () => {
             className="hover:text-(--hover-foreground)"
             href="https://dribbble.com/andrejkoller"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Dribbble
           </Link>
@@ -23,6 +25,7 @@ export const Footer = () => {
             className="hover:text-(--hover-foreground)"
             href="https://github.com/andrejkoller"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </Link>
@@ -30,6 +33,7 @@ export const Footer = () => {
             className="hover:text-(--hover-foreground)"
             href="https://www.linkedin.com/in/andrejkoller"
             target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </Link>

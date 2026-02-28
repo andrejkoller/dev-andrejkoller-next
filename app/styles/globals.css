@@ -39,6 +39,27 @@ body.theme-transitions {
     color 0.2s ease;
 }
 
+.expertise-item {
+  transition: border-color 0.3s ease;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.expertise-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--foreground);
+  transition: width 0.3s ease-out;
+}
+
+.expertise-item:hover::after {
+  width: 100%;
+}
+
 ::selection {
   background: var(--foreground);
   color: var(--background);
