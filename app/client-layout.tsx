@@ -11,7 +11,7 @@ export default function ClientLayout({
     <ThemeProvider>
       <div className="flex flex-col min-h-screen text-sm">
         <Header />
-        <main className="max-w-175 w-full min-h-screen mx-auto px-4 grow">
+        <main className="max-w-175 w-full min-h-screen mx-auto px-4 grow mb-12">
           {children}
         </main>
         <Footer />
