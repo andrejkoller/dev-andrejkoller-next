@@ -60,10 +60,10 @@ export default function Home() {
           <p className="mb-4">
             <span className="text-(--secondary-foreground)">2026</span>
             <span className="text-(--secondary-foreground) mx-2">—</span>
-            <span>Charts</span>
+            <span>Lofty Charts</span>
           </p>
           <div className="bg-(--foreground) h-125 w-full rounded-xl">
-            {/* Placeholder for Charts project image */}
+            {/* Placeholder for Lofty Charts project image */}
           </div>
         </div>
         <div className="mb-24">

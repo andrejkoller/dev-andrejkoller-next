@@ -14,9 +14,9 @@ A minimalist portfolio website showcasing products, projects, and creative work.
 
 ## 🛠️ Tech Stack
 
-- **Framework:** [Next.js 16](https://nextjs.org) (App Router)
-- **Language:** [TypeScript 5](https://www.typescriptlang.org)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com)
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript 5
+- **Styling:** Tailwind CSS v4
 - **React:** Version 19
 
 ## 📋 Prerequisites
