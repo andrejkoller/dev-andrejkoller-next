@@ -1,7 +1,5 @@
 "use client";
 
-import { ThemeToggle } from "@/components/theme/theme-toggle";
-
 export default function Home() {
   return (
     <>
@@ -14,10 +12,7 @@ export default function Home() {
           Based in Passau, Germany.
         </p>
       </section>
-      <div className="mb-12 fade-in delay-2">
-        <ThemeToggle />
-      </div>
-      <section className="mb-12 fade-in delay-3">
+      <section className="mb-12 fade-in delay-2">
         <div className="flex justify-between items-baseline border-b border-(--border) expertise-item">
           <div>
             <h2 className="font-normal">ICUnet</h2>
@@ -30,7 +25,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mb-12 fade-in delay-4">
+      <section className="mb-12 fade-in delay-3">
         <h2 className="text-sm font-bold mb-4">Featured</h2>
         <div>
           <p className="mb-4">
@@ -44,7 +39,7 @@ export default function Home() {
         </div>
       </section>
       <hr className="border-t border-(--border) my-12"></hr>
-      <section className="mb-16 fade-in delay-5">
+      <section className="mb-16 fade-in delay-4">
         <h3 className="text-sm font-bold mb-8">Product</h3>
         <div className="mb-24">
           <p className="mb-4">
@@ -87,7 +82,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mb-16 fade-in delay-6">
+      <section className="mb-16 fade-in delay-5">
         <h3 className="text-sm font-bold mb-8">Branding</h3>
         <div className="mb-24">
           <p className="mb-4">
@@ -100,7 +95,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mb-12 fade-in delay-7">
+      <section className="mb-12 fade-in delay-6">
         <h2 className="text-sm font-bold mb-4">Skills & Technologies</h2>
         <p className="mb-4 text-(--secondary-foreground)">
           I design and build modern, performant web interfaces using HTML, SCSS,
@@ -109,7 +104,7 @@ export default function Home() {
           digital experiences crafted with TailwindCSS and Figma.
         </p>
       </section>
-      <section className="mb-12 fade-in delay-8">
+      <section className="mb-12 fade-in delay-7">
         <h2 className="text-sm font-bold mb-4">Ongoing Projects</h2>
         <p className="mb-4 text-(--secondary-foreground)">
           Builds ongoing projects spanning music, products, and open source,
