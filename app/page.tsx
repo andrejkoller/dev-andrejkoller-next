@@ -132,11 +132,11 @@ export default function Home() {
           <li>
             <a
               className="hover:text-(--hover-foreground)"
-              href="https://linktr.ee/prettyswing"
+              href="https://linktr.ee/digitalcarnival"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Pretty Swing
+              Digital Carnival
             </a>
           </li>
         </ul>
