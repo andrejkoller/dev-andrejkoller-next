@@ -2,21 +2,11 @@
 
 A minimalist portfolio website showcasing products, projects, and creative work. Built with modern web technologies and a focus on performance, accessibility, and clean design.
 
-## ✨ Features
-
-- Light/Dark Theme Toggle - Persistent theme system with localStorage and system preference detection
-- Server-Side Rendering - Fast initial page loads with Next.js App Router
-- Hydration-Safe - Proper handling of client/server state with `useSyncExternalStore`
-- Zero Flicker - Theme preference applied before initial render
-- Modular Architecture - Well-organized context system with separation of concerns
-- TypeScript - Full type safety across the application
-- Responsive Design - Mobile-first approach with Tailwind CSS v4
-
 ## 🛠️ Tech Stack
 
-- Framework: Next.js
-- Language: TypeScript
-- Styling: Tailwind CSS
+- **Framework**: [Next.js 16](https://nextjs.org) (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
 
 ## 📋 Prerequisites
 
