@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Andrej Koller",
+  title: "Andrej Koller — Designer & Frontend Engineer",
   description:
     "Andrej Koller is a designer and frontend engineer from Ekibastuz, Kazakhstan. Based in Passau, Germany.",
 };
