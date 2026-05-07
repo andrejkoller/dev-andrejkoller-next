@@ -4,13 +4,14 @@ A minimalist portfolio website showcasing products, projects, and creative work.
 
 ## ✨ Features
 
-- **Light/Dark Theme Toggle** - Persistent theme system with localStorage and system preference detection
 - **Server-Side Rendering** - Fast initial page loads with Next.js App Router
-- **Hydration-Safe** - Proper handling of client/server state with `useSyncExternalStore`
-- **Zero Flicker** - Theme preference applied before initial render
-- **Modular Architecture** - Well-organized context system with separation of concerns
+- **Responsive Design** - Mobile-first layout with Tailwind CSS v4 and custom breakpoints
+- **Fade-in Animations** - Staggered entrance animations for a smooth page experience
+- **Custom Theming** - CSS custom properties for consistent dark color palette
+- **Modular Architecture** - Separated Header, Footer, and layout components
+- **Google Fonts** - Geist Sans and Geist Mono via `next/font`
 - **TypeScript** - Full type safety across the application
-- **Responsive Design** - Mobile-first approach with Tailwind CSS v4
+- **Social Links** - Footer with links to X, Dribbble, GitHub, and LinkedIn
 
 ## 🛠️ Tech Stack
 
