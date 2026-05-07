@@ -48,4 +48,28 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## 📁 Project Structure
+
+```
+dev-andrejkoller-next/
+├── app/
+│   ├── styles/
+│   │   └── globals.css       # Global styles
+│   ├── client-layout.tsx     # Client-side layout wrapper
+│   ├── layout.tsx            # Root layout
+│   └── page.tsx              # Home page
+├── components/
+│   ├── footer.tsx            # Footer component
+│   └── header.tsx            # Header component
+├── eslint.config.mjs         # ESLint configuration
+├── LICENSE
+├── next-env.d.ts             # Next.js TypeScript declarations
+├── next.config.ts            # Next.js configuration
+├── package.json
+├── postcss.config.mjs        # PostCSS configuration
+├── README.md
+├── SECURITY.md
+└── tsconfig.json             # TypeScript configuration
+```
+
 ## 📸 Screenshots
