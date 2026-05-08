@@ -4,19 +4,20 @@ A minimalist portfolio website showcasing products, projects, and creative work.
 
 ## ✨ Features
 
-- Light/Dark Theme Toggle - Persistent theme system with localStorage and system preference detection
-- Server-Side Rendering - Fast initial page loads with Next.js App Router
-- Hydration-Safe - Proper handling of client/server state with `useSyncExternalStore`
-- Zero Flicker - Theme preference applied before initial render
-- Modular Architecture - Well-organized context system with separation of concerns
-- TypeScript - Full type safety across the application
-- Responsive Design - Mobile-first approach with Tailwind CSS v4
+- **Server-Side Rendering** - Fast initial page loads with Next.js App Router
+- **Responsive Design** - Mobile-first layout with Tailwind CSS v4 and custom breakpoints
+- **Fade-in Animations** - Staggered entrance animations for a smooth page experience
+- **Custom Theming** - CSS custom properties for consistent dark color palette
+- **Modular Architecture** - Separated Header, Footer, and layout components
+- **Google Fonts** - Geist Sans and Geist Mono via `next/font`
+- **TypeScript** - Full type safety across the application
+- **Social Links** - Footer with links to X, Dribbble, GitHub, and LinkedIn
 
 ## 🛠️ Tech Stack
 
-- Framework: Next.js
-- Language: TypeScript
-- Styling: Tailwind CSS
+- **Framework**: [Next.js 16](https://nextjs.org) (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
 
 ## 📋 Prerequisites
 
@@ -46,7 +47,30 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## 📁 Project Structure
+
+```
+dev-andrejkoller-next/
+├── app/
+│   ├── styles/
+│   │   └── globals.css       # Global styles
+│   ├── client-layout.tsx     # Client-side layout wrapper
+│   ├── layout.tsx            # Root layout
+│   └── page.tsx              # Home page
+├── components/
+│   ├── footer.tsx            # Footer component
+│   └── header.tsx            # Header component
+├── eslint.config.mjs         # ESLint configuration
+├── LICENSE
+├── next-env.d.ts             # Next.js TypeScript declarations
+├── next.config.ts            # Next.js configuration
+├── package.json
+├── postcss.config.mjs        # PostCSS configuration
+├── README.md
+├── SECURITY.md
+└── tsconfig.json             # TypeScript configuration
+```
+
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="Screenshot 1" src="https://github.com/user-attachments/assets/268a9e7b-0c7c-47cc-b448-f077f702a0a5" />
-<img width="1920" height="1080" alt="Screenshot 2" src="https://github.com/user-attachments/assets/5cd5ec36-3011-4e54-a1ea-4c5c392b93eb" />
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/f78c766d-fd01-47a9-bce9-7adfaff26503" />
