@@ -9,7 +9,7 @@ export default function ClientLayout({
   return (
     <div className="flex flex-col min-h-screen text-sm">
       <Header />
-      <main className="max-w-175 w-full min-h-screen mx-auto px-4 grow mb-12">
+      <main className="max-w-2xl w-full min-h-screen mx-auto px-4 grow mb-12">
         {children}
       </main>
       <Footer />
