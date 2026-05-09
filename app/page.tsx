@@ -1,3 +1,5 @@
+import { projectLinksConfig } from "@/configs/project-links-config";
+
 export default function Home() {
   return (
     <>
@@ -109,36 +111,18 @@ export default function Home() {
           with an emphasis on tools for designers and developers.
         </p>
         <ul className="space-y-2">
-          <li>
-            <a
-              className="hover:text-(--hover-foreground)"
-              href="https://linktr.ee/athanasa"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Athanasa
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:text-(--hover-foreground)"
-              href="https://linktr.ee/fadinghell"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Fading Hell
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:text-(--hover-foreground)"
-              href="https://linktr.ee/digitalcarnival"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Digital Carnival
-            </a>
-          </li>
+          {projectLinksConfig.map((project) => (
+            <li key={project.name}>
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-(--hover-foreground) transition-colors duration-200"
+              >
+                {project.name}
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
     </>
