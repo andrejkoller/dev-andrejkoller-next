@@ -60,6 +60,8 @@ dev-andrejkoller-next/
 ├── components/
 │   ├── footer.tsx            # Footer component
 │   └── header.tsx            # Header component
+├── configs/
+│   └── project-links-config.ts  # Project links configuration
 ├── eslint.config.mjs         # ESLint configuration
 ├── LICENSE
 ├── next-env.d.ts             # Next.js TypeScript declarations
