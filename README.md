@@ -75,4 +75,4 @@ dev-andrejkoller-next/
 
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/f78c766d-fd01-47a9-bce9-7adfaff26503" />
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/760d5403-9941-4eba-9d0c-c2ec507e7762" />
