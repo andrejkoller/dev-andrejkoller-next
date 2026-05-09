@@ -15,10 +15,9 @@ A minimalist portfolio website showcasing products, projects, and creative work.
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 16 (App Router)
-- **Language:** TypeScript 5
-- **Styling:** Tailwind CSS v4
-- **React:** Version 19
+- **Framework**: [Next.js 16](https://nextjs.org) (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
 
 ## 📋 Prerequisites
 
@@ -37,7 +36,6 @@ cd dev-andrejkoller-next
 2. Install dependencies
 
 ```bash
-# Install dependencies
 npm install
 ```
 
@@ -74,3 +72,5 @@ dev-andrejkoller-next/
 ```
 
 ## 📸 Screenshots
+
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/f78c766d-fd01-47a9-bce9-7adfaff26503" />
