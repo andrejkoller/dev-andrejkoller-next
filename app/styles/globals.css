@@ -25,10 +25,9 @@ body {
     monospace;
 }
 
-body.theme-transitions {
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
+p {
+  color: var(--secondary-foreground);
+  line-height: 1.7;
 }
 
 .expertise-item {
@@ -89,10 +88,6 @@ body.theme-transitions {
   animation-delay: 0.8s;
 }
 
-.delay-9 {
-  animation-delay: 0.9s;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -102,9 +97,4 @@ body.theme-transitions {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-::selection {
-  background: var(--foreground);
-  color: var(--background);
 }

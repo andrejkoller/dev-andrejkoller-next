@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="w-full border-t border-(--border) h-50 fade-in delay-9">
+    <footer className="w-full border-t border-(--border) h-50 fade-in delay-8">
       <div className="max-w-2xl w-full mx-auto px-4 h-full flex flex-col justify-center items-center gap-12 min-[425px]:flex-row min-[425px]:gap-0 min-[425px]:justify-between max-[425px]:items-start">
         <div className="flex space-x-8">
           <Link

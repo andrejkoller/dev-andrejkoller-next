@@ -4,30 +4,26 @@ export default function Home() {
   return (
     <>
       <section className="mb-12 fade-in delay-1">
-        <p className="mb-4 text-(--secondary-foreground)">
+        <p className="mb-4">
           <span className="text-(--foreground)">Andrej Koller</span> is a
           designer and frontend engineer from Ekibastuz, Kazakhstan.
         </p>
-        <p className="mb-4 text-(--secondary-foreground)">
-          Based in Passau, Germany.
-        </p>
+        <p className="mb-4">Based in Passau, Germany.</p>
       </section>
       <section className="mb-12 fade-in delay-2">
         <div className="flex justify-between items-baseline border-b border-(--border) expertise-item">
           <div>
             <h2 className="font-normal">ICUnet</h2>
-            <p className="text-(--secondary-foreground)">
-              Software Developer, Training
-            </p>
+            <p>Software Developer, Training</p>
           </div>
           <div className="text-(--secondary-foreground) flex items-center whitespace-nowrap">
             2022-2025
           </div>
         </div>
       </section>
-      <section className="mb-12 fade-in delay-3">
+      <section className="fade-in delay-3">
         <h2 className="text-sm font-bold mb-4">Featured</h2>
-        <div>
+        <div className="mb-24">
           <p className="mb-4">
             <span className="text-(--secondary-foreground)">2026</span>
             <span className="text-(--secondary-foreground) mx-2">—</span>
@@ -38,8 +34,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <hr className="border-t border-(--border) my-12"></hr>
-      <section className="mb-16 fade-in delay-4">
+      <hr className="border-t border-(--border) mb-24"></hr>
+      <section className="fade-in delay-4">
         <h3 className="text-sm font-bold mb-8">Product</h3>
         <div className="mb-24">
           <p className="mb-4">
@@ -82,7 +78,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mb-16 fade-in delay-5">
+      <section className="fade-in delay-5">
         <h3 className="text-sm font-bold mb-8">Branding</h3>
         <div className="mb-24">
           <p className="mb-4">
@@ -97,7 +93,7 @@ export default function Home() {
       </section>
       <section className="mb-12 fade-in delay-6">
         <h2 className="text-sm font-bold mb-4">Skills & Technologies</h2>
-        <p className="mb-4 text-(--secondary-foreground)">
+        <p>
           I design and build modern, performant web interfaces using HTML, SCSS,
           TypeScript, and frameworks like Angular, React, Next.js, and Vue.
           Focused on clean architecture, refined UI systems, and thoughtful
@@ -106,7 +102,7 @@ export default function Home() {
       </section>
       <section className="mb-12 fade-in delay-7">
         <h2 className="text-sm font-bold mb-4">Ongoing Projects</h2>
-        <p className="mb-4 text-(--secondary-foreground)">
+        <p className="mb-4">
           Builds ongoing projects spanning music, products, and open source,
           with an emphasis on tools for designers and developers.
         </p>
