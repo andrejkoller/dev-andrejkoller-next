@@ -1,4 +1,5 @@
 import { projectLinksConfig } from "@/configs/project-links-config";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -109,14 +110,14 @@ export default function Home() {
         <ul className="space-y-2">
           {projectLinksConfig.map((project) => (
             <li key={project.key}>
-              <a
+              <Link
                 href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={project.isExternal ? "_blank" : "_self"}
+                rel={project.isExternal ? "noopener noreferrer" : undefined}
                 className="hover:text-(--hover-foreground) transition-colors duration-200"
               >
                 {project.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
