@@ -108,7 +108,7 @@ export default function Home() {
         </p>
         <ul className="space-y-2">
           {projectLinksConfig.map((project) => (
-            <li key={project.name}>
+            <li key={project.key}>
               <a
                 href={project.url}
                 target="_blank"
