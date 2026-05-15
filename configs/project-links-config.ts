@@ -11,8 +11,4 @@ export const projectLinksConfig = [
     name: "Digital Carnival",
     url: "https://linktr.ee/digitalcarnival",
   },
-  {
-    name: "OpenPresenter",
-    url: "https://linktr.ee/openpresenter",
-  },
 ];
