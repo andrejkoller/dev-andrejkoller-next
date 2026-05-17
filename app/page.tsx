@@ -6,18 +6,18 @@ export default function Home() {
     <>
       <section className="mb-12 fade-in delay-1">
         <p className="mb-4">
-          <span className="text-(--foreground)">Andrej Koller</span> is a
-          designer and frontend engineer from Ekibastuz, Kazakhstan.
+          <span className="text-foreground">Andrej Koller</span> is a designer
+          and frontend engineer from Ekibastuz, Kazakhstan.
         </p>
         <p className="mb-4">Based in Passau, Germany.</p>
       </section>
       <section className="mb-12 fade-in delay-2">
-        <div className="flex justify-between items-baseline border-b border-(--border) expertise-item">
+        <div className="flex justify-between items-baseline border-b border-border expertise-item">
           <div>
             <h2 className="font-normal">ICUnet</h2>
             <p>Software Developer, Training</p>
           </div>
-          <div className="text-(--secondary-foreground) flex items-center whitespace-nowrap">
+          <div className="text-secondary-foreground flex items-center whitespace-nowrap">
             2022-2025
           </div>
         </div>
@@ -26,55 +26,55 @@ export default function Home() {
         <h2 className="text-sm font-bold mb-4">Featured</h2>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-(--secondary-foreground)">2026</span>
-            <span className="text-(--secondary-foreground) mx-2">—</span>
+            <span className="text-secondary-foreground">2026</span>
+            <span className="text-secondary-foreground mx-2">—</span>
             <span>Athanasa</span>
           </p>
-          <div className="bg-(--foreground) h-125 w-full rounded-xl">
+          <div className="bg-foreground h-125 w-full rounded-xl">
             {/* Placeholder for Athanasa project image */}
           </div>
         </div>
       </section>
-      <hr className="border-t border-(--border) mb-24"></hr>
+      <hr className="border-t border-border mb-24"></hr>
       <section className="fade-in delay-4">
         <h3 className="text-sm font-bold mb-8">Product</h3>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-(--secondary-foreground)">2027</span>
-            <span className="text-(--secondary-foreground) mx-2">—</span>
+            <span className="text-secondary-foreground">2027</span>
+            <span className="text-secondary-foreground mx-2">—</span>
             <span>Sophia.js</span>
           </p>
-          <div className="bg-(--foreground) h-125 w-full rounded-xl">
+          <div className="bg-foreground h-125 w-full rounded-xl">
             {/* Placeholder for Sophia.js project image */}
           </div>
         </div>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-(--secondary-foreground)">2026</span>
-            <span className="text-(--secondary-foreground) mx-2">—</span>
+            <span className="text-secondary-foreground">2026</span>
+            <span className="text-secondary-foreground mx-2">—</span>
             <span>Lofty Charts</span>
           </p>
-          <div className="bg-(--foreground) h-125 w-full rounded-xl">
+          <div className="bg-foreground h-125 w-full rounded-xl">
             {/* Placeholder for Lofty Charts project image */}
           </div>
         </div>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-(--secondary-foreground)">2026</span>
-            <span className="text-(--secondary-foreground) mx-2">—</span>
+            <span className="text-secondary-foreground">2026</span>
+            <span className="text-secondary-foreground mx-2">—</span>
             <span>Elegant Icons</span>
           </p>
-          <div className="bg-(--foreground) h-125 w-full rounded-xl">
+          <div className="bg-foreground h-125 w-full rounded-xl">
             {/* Placeholder for Elegant Icons project image */}
           </div>
         </div>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-(--secondary-foreground)">2025</span>
-            <span className="text-(--secondary-foreground) mx-2">—</span>
+            <span className="text-secondary-foreground">2025</span>
+            <span className="text-secondary-foreground mx-2">—</span>
             <span>Omelia UI</span>
           </p>
-          <div className="bg-(--foreground) h-125 w-full rounded-xl">
+          <div className="bg-foreground h-125 w-full rounded-xl">
             {/* Placeholder for Omelia UI project image */}
           </div>
         </div>
@@ -83,11 +83,11 @@ export default function Home() {
         <h3 className="text-sm font-bold mb-8">Branding</h3>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-(--secondary-foreground)">2028</span>
-            <span className="text-(--secondary-foreground) mx-2">—</span>
+            <span className="text-secondary-foreground">2028</span>
+            <span className="text-secondary-foreground mx-2">—</span>
             <span>Font</span>
           </p>
-          <div className="bg-(--foreground) h-125 w-full rounded-xl">
+          <div className="bg-foreground h-125 w-full rounded-xl">
             {/* Placeholder for Font project image */}
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function Home() {
                 href={project.url}
                 target={project.isExternal ? "_blank" : "_self"}
                 rel={project.isExternal ? "noopener noreferrer" : undefined}
-                className="hover:text-(--hover-foreground) transition-colors duration-200"
+                className="hover:text-hover-foreground transition-colors duration-200"
               >
                 {project.name}
               </Link>
