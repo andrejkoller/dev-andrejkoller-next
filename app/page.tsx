@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
+      {/* Introduction */}
       <section className="mb-12 fade-in delay-1">
         <p className="mb-4">
           <span className="text-foreground">Andrej Koller</span> is a designer
@@ -11,6 +12,8 @@ export default function Home() {
         </p>
         <p className="mb-4">Based in Passau, Germany.</p>
       </section>
+
+      {/* Experience */}
       <section className="mb-12 fade-in delay-2">
         <div className="flex justify-between items-baseline border-b border-border expertise-item">
           <div>
@@ -22,6 +25,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Featured projects */}
       <section className="fade-in delay-3">
         <h2 className="text-sm font-bold mb-4">Featured</h2>
         <div className="mb-24">
@@ -35,7 +40,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <hr className="border-t border-border mb-24"></hr>
+
+      <hr className="border-t border-border mb-24" />
+
+      {/* Product & Branding */}
       <section className="fade-in delay-4">
         <h3 className="text-sm font-bold mb-8">Product</h3>
         <div className="mb-24">
@@ -92,6 +100,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Skills & ongoing projects */}
       <section className="mb-12 fade-in delay-6">
         <h2 className="text-sm font-bold mb-4">Skills & Technologies</h2>
         <p>
