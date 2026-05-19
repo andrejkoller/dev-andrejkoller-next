@@ -8,10 +8,14 @@ export default function ClientLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="flex flex-col min-h-screen text-sm">
+      {/* Header */}
       <Header />
+
       <main className="max-w-2xl w-full min-h-screen mx-auto px-4 grow">
         {children}
       </main>
+
+      {/* Footer */}
       <Footer />
     </div>
   );

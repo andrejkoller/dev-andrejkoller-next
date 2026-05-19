@@ -5,7 +5,7 @@
   --foreground: #ffffff;
   --secondary-foreground: #666666;
   --border: #333333;
-  --hover-foreground: #d1d5dc;
+  --hover-foreground: #8f8f8f;
 }
 
 @theme inline {
