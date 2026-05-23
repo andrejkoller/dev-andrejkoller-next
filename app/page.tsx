@@ -1,3 +1,4 @@
+import { experienceConfig } from "@/configs/experience-config";
 import { projectLinksConfig } from "@/configs/project-links-config";
 import Link from "next/link";
 
@@ -15,15 +16,20 @@ export default function Home() {
 
       {/* Experience */}
       <section className="mb-12 fade-in delay-2">
-        <div className="flex justify-between items-baseline border-b border-border expertise-item">
-          <div>
-            <h2 className="font-normal">ICUnet</h2>
-            <p>Software Developer, Training</p>
+        {experienceConfig.map((experience) => (
+          <div
+            key={experience.key}
+            className="flex justify-between items-baseline border-b border-border expertise-item"
+          >
+            <div>
+              <h2 className="font-normal">{experience.company}</h2>
+              <p>{experience.role}</p>
+            </div>
+            <div className="text-secondary-foreground flex items-center whitespace-nowrap">
+              {experience.period}
+            </div>
           </div>
-          <div className="text-secondary-foreground flex items-center whitespace-nowrap">
-            2022-2025
-          </div>
-        </div>
+        ))}
       </section>
 
       {/* Featured projects */}
