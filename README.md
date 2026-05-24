@@ -1,8 +1,8 @@
-## Short description
+# dev-andrejkoller-next
 
 A minimalist portfolio website showcasing products, projects, and creative work. Built with modern web technologies and a focus on performance, accessibility, and clean design.
 
-## ✨ Features
+## Features
 
 - **Server-Side Rendering** - Fast initial page loads with Next.js App Router
 - **Responsive Design** - Mobile-first layout with Tailwind CSS v4 and custom breakpoints
@@ -10,21 +10,23 @@ A minimalist portfolio website showcasing products, projects, and creative work.
 - **Custom Theming** - CSS custom properties for consistent dark color palette
 - **Modular Architecture** - Separated Header, Footer, and layout components
 - **Google Fonts** - Geist Sans and Geist Mono via `next/font`
+- **Work Experience Section** - Configurable work history with company, role, and period
 - **TypeScript** - Full type safety across the application
 - **Social Links** - Footer with links to X, Dribbble, GitHub, and LinkedIn
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js 16](https://nextjs.org) (App Router)
 - **Language**: TypeScript
+- **Library**: React 19
 - **Styling**: Tailwind CSS v4
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 18.x or higher
 - npm, yarn, pnpm, or bun
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository
 
@@ -47,6 +49,38 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📸 Screenshots
+## Project Structure
 
-<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/1546b99a-bc78-4e7c-a24f-aed7c0b59bd2" />
+```
+dev-andrejkoller-next/
+├── app/
+│   ├── styles/
+│   │   └── globals.css       # Global styles
+│   ├── client-layout.tsx     # Client-side layout wrapper
+│   ├── layout.tsx            # Root layout
+│   └── page.tsx              # Home page
+├── components/
+│   ├── footer.tsx            # Footer component
+│   └── header.tsx            # Header component
+├── configs/
+│   ├── experience-config.ts      # Work experience configuration
+│   ├── footer-links-config.ts    # Footer social links configuration
+│   └── project-links-config.ts  # Project links configuration
+├── eslint.config.mjs         # ESLint configuration
+├── LICENSE
+├── next-env.d.ts             # Next.js TypeScript declarations
+├── next.config.ts            # Next.js configuration
+├── package.json
+├── postcss.config.mjs        # PostCSS configuration
+├── README.md
+├── SECURITY.md
+└── tsconfig.json             # TypeScript configuration
+```
+
+## Screenshots
+
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/f78c766d-fd01-47a9-bce9-7adfaff26503" />
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
