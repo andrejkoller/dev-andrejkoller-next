@@ -66,6 +66,9 @@ dev-andrejkoller-next/
 │   ├── experience-config.ts      # Work experience configuration
 │   ├── footer-links-config.ts    # Footer social links configuration
 │   └── project-links-config.ts  # Project links configuration
+├── public/
+│   └── images/
+│       └── screenshot.png    # Screenshot
 ├── eslint.config.mjs         # ESLint configuration
 ├── LICENSE
 ├── next-env.d.ts             # Next.js TypeScript declarations
@@ -79,7 +82,7 @@ dev-andrejkoller-next/
 
 ## Screenshots
 
-<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/f78c766d-fd01-47a9-bce9-7adfaff26503" />
+![Screenshot](public/images/screenshot.png)
 
 ## License
 
