@@ -11,10 +11,4 @@ export const projectLinksConfig = [
     url: "https://linktr.ee/fadinghell",
     isExternal: true,
   },
-  {
-    key: "digitalcarnival",
-    name: "Digital Carnival",
-    url: "https://linktr.ee/digitalcarnival",
-    isExternal: true,
-  },
 ];
