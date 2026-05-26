@@ -1,7 +1,7 @@
 export const footerLinksConfig = [
   {
     key: "x",
-    name: "𝕏",
+    name: "X",
     href: "https://x.com/andrejkoller",
   },
   {

@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
 :root {
+  --header-height: 12.5rem;
+
   --background: #000000;
   --foreground: #ffffff;
-  --secondary-foreground: #666666;
-  --border: #333333;
-  --hover-foreground: #8f8f8f;
+
+  --text-muted: rgba(255, 255, 255, 0.2);
+  --text-hover: rgba(255, 255, 255, 0.4);
+  --text-primary: rgba(255, 255, 255, 1);
+
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #000000;
+
+  --text-muted: rgba(0, 0, 0, 0.2);
+  --text-hover: rgba(0, 0, 0, 0.4);
+  --text-primary: rgba(0, 0, 0, 1);
+
+  --border: rgba(0, 0, 0, 0.1);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-secondary-foreground: var(--secondary-foreground);
+  --color-text-muted: var(--text-muted);
+  --color-text-hover: var(--text-hover);
+  --color-text-primary: var(--text-primary);
   --color-border: var(--border);
-  --color-hover-foreground: var(--hover-foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background);
+  color: var(--color-text-primary);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -36,8 +51,18 @@ body {
 }
 
 p {
-  color: var(--secondary-foreground);
+  color: var(--color-text-muted);
   line-height: 1.7;
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-text-hover);
 }
 
 .expertise-item {
@@ -53,7 +78,7 @@ p {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: var(--foreground);
+  background-color: var(--color-foreground);
   transition: width 0.3s ease-out;
 }
 

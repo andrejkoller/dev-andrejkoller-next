@@ -10,7 +10,6 @@ export const Footer = () => {
           {footerLinksConfig.map((link) => (
             <Link
               key={link.key}
-              className="hover:text-hover-foreground"
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
@@ -21,9 +20,7 @@ export const Footer = () => {
         </div>
 
         {/* Right side: Copyright */}
-        <div className="text-secondary-foreground">
-          &copy; {new Date().getFullYear()}
-        </div>
+        <p>&copy; {new Date().getFullYear()}</p>
       </div>
     </footer>
   );
