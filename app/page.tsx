@@ -8,8 +8,10 @@ export default function Home() {
       {/* Introduction */}
       <section className="mb-12 fade-in delay-1">
         <p className="mb-4">
-          <span className="text-foreground">Andrej Koller</span> is a designer
-          and frontend engineer from Ekibastuz, Kazakhstan.
+          <span style={{ color: "var(--color-text-primary)" }}>
+            Andrej Koller
+          </span>{" "}
+          is a designer and frontend engineer from Ekibastuz, Kazakhstan.
         </p>
         <p className="mb-4">Based in Passau, Germany.</p>
       </section>
@@ -25,9 +27,9 @@ export default function Home() {
               <h2 className="font-normal">{experience.company}</h2>
               <p>{experience.role}</p>
             </div>
-            <div className="text-secondary-foreground flex items-center whitespace-nowrap">
+            <p className="flex items-center whitespace-nowrap">
               {experience.period}
-            </div>
+            </p>
           </div>
         ))}
       </section>
@@ -37,8 +39,8 @@ export default function Home() {
         <h2 className="text-sm font-bold mb-4">Featured</h2>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-secondary-foreground">2026</span>
-            <span className="text-secondary-foreground mx-2">—</span>
+            <span className="text-color-muted">2026</span>
+            <span className="text-color-muted mx-2">—</span>
             <span>Athanasa</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -54,8 +56,8 @@ export default function Home() {
         <h3 className="text-sm font-bold mb-8">Product</h3>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-secondary-foreground">2027</span>
-            <span className="text-secondary-foreground mx-2">—</span>
+            <span className="text-color-muted">2027</span>
+            <span className="text-color-muted mx-2">—</span>
             <span>Sophia.js</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -64,8 +66,8 @@ export default function Home() {
         </div>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-secondary-foreground">2026</span>
-            <span className="text-secondary-foreground mx-2">—</span>
+            <span className="text-color-muted">2026</span>
+            <span className="text-color-muted mx-2">—</span>
             <span>Lofty Charts</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -74,8 +76,8 @@ export default function Home() {
         </div>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-secondary-foreground">2026</span>
-            <span className="text-secondary-foreground mx-2">—</span>
+            <span className="text-color-muted">2026</span>
+            <span className="text-color-muted mx-2">—</span>
             <span>Elegant Icons</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -84,8 +86,8 @@ export default function Home() {
         </div>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-secondary-foreground">2025</span>
-            <span className="text-secondary-foreground mx-2">—</span>
+            <span className="text-color-muted">2025</span>
+            <span className="text-color-muted mx-2">—</span>
             <span>Omelia UI</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -97,8 +99,8 @@ export default function Home() {
         <h3 className="text-sm font-bold mb-8">Branding</h3>
         <div className="mb-24">
           <p className="mb-4">
-            <span className="text-secondary-foreground">2028</span>
-            <span className="text-secondary-foreground mx-2">—</span>
+            <span className="text-color-muted">2028</span>
+            <span className="text-color-muted mx-2">—</span>
             <span>Font</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -130,7 +132,6 @@ export default function Home() {
                 href={project.url}
                 target={project.isExternal ? "_blank" : "_self"}
                 rel={project.isExternal ? "noopener noreferrer" : undefined}
-                className="hover:text-hover-foreground transition-colors duration-200"
               >
                 {project.name}
               </Link>
