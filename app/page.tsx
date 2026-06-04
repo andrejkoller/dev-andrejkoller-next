@@ -1,3 +1,4 @@
+import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 import { experienceConfig } from "@/configs/experience-config";
 import { projectLinksConfig } from "@/configs/project-links-config";
 import Link from "next/link";
@@ -16,8 +17,13 @@ export default function Home() {
         <p className="mb-4">Based in Passau, Germany.</p>
       </section>
 
-      {/* Experience */}
+      {/* Theme switcher */}
       <section className="mb-12 fade-in delay-2">
+        <ThemeSwitcher />
+      </section>
+
+      {/* Experience */}
+      <section className="mb-12 fade-in delay-3">
         {experienceConfig.map((experience) => (
           <div
             key={experience.key}
@@ -35,7 +41,7 @@ export default function Home() {
       </section>
 
       {/* Featured projects */}
-      <section className="fade-in delay-3">
+      <section className="fade-in delay-4">
         <h2 className="text-sm font-bold mb-4">Featured</h2>
         <div className="mb-24">
           <p className="mb-4">
@@ -52,7 +58,7 @@ export default function Home() {
       <hr className="border-t border-border mb-24" />
 
       {/* Product & Branding */}
-      <section className="fade-in delay-4">
+      <section className="fade-in delay-5">
         <h3 className="text-sm font-bold mb-8">Product</h3>
         <div className="mb-24">
           <p className="mb-4">
@@ -95,7 +101,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="fade-in delay-5">
+      <section className="fade-in delay-6">
         <h3 className="text-sm font-bold mb-8">Branding</h3>
         <div className="mb-24">
           <p className="mb-4">
@@ -110,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Skills & ongoing projects */}
-      <section className="mb-12 fade-in delay-6">
+      <section className="mb-12 fade-in delay-7">
         <h2 className="text-sm font-bold mb-4">Skills & Technologies</h2>
         <p>
           I design and build modern, performant web interfaces using HTML, SCSS,
@@ -119,7 +125,7 @@ export default function Home() {
           digital experiences crafted with TailwindCSS and Figma.
         </p>
       </section>
-      <section className="mb-12 fade-in delay-7">
+      <section className="mb-12 fade-in delay-8">
         <h2 className="text-sm font-bold mb-4">Ongoing Projects</h2>
         <p className="mb-4">
           Builds ongoing projects spanning music, products, and open source,
