@@ -55,34 +55,43 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 dev-andrejkoller-next/
 ├── app/
 │   ├── styles/
-│   │   └── globals.css       # Global styles
-│   ├── client-layout.tsx     # Client-side layout wrapper
-│   ├── layout.tsx            # Root layout
-│   └── page.tsx              # Home page
+│   │   └── globals.css           # Global styles
+│   ├── client-layout.tsx         # Client-side layout wrapper
+│   ├── layout.tsx                # Root layout
+│   └── page.tsx                  # Home page
 ├── components/
-│   ├── footer.tsx            # Footer component
-│   └── header.tsx            # Header component
+│   ├── theme/
+│   │   ├── theme-context.ts      # Theme React context
+│   │   ├── theme-provider.tsx    # Theme provider component
+│   │   ├── theme-switcher.tsx    # Theme toggle button
+│   │   ├── types.ts              # Theme types
+│   │   └── use-theme.ts          # useTheme hook
+│   ├── footer.tsx                # Footer component
+│   └── header.tsx                # Header component
 ├── configs/
 │   ├── experience-config.ts      # Work experience configuration
 │   ├── footer-links-config.ts    # Footer social links configuration
 │   └── project-links-config.ts  # Project links configuration
 ├── public/
 │   └── images/
-│       └── screenshot.png    # Screenshot
-├── eslint.config.mjs         # ESLint configuration
+│       ├── screenshot-1.png
+│       └── screenshot-2.png
+├── custom.d.ts                   # Custom TypeScript declarations
+├── eslint.config.mjs             # ESLint configuration
 ├── LICENSE
-├── next-env.d.ts             # Next.js TypeScript declarations
-├── next.config.ts            # Next.js configuration
+├── next-env.d.ts                 # Next.js TypeScript declarations
+├── next.config.ts                # Next.js configuration
 ├── package.json
-├── postcss.config.mjs        # PostCSS configuration
+├── postcss.config.mjs            # PostCSS configuration
 ├── README.md
 ├── SECURITY.md
-└── tsconfig.json             # TypeScript configuration
+└── tsconfig.json                 # TypeScript configuration
 ```
 
 ## Screenshots
 
-![Screenshot](public/images/screenshot.png)
+![Screenshot 1](public/images/screenshot-1.png)
+![Screenshot 2](public/images/screenshot-2.png)
 
 ## License
 
