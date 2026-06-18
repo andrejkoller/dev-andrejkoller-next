@@ -8,32 +8,32 @@ export default function Home() {
     <>
       {/* Introduction */}
       <section className="mb-12 fade-in delay-1">
-        <p className="mb-4">
-          <span style={{ color: "var(--color-text-primary)" }}>
-            Andrej Koller
-          </span>{" "}
-          is a designer and frontend engineer from Ekibastuz, Kazakhstan.
+        <p className="mb-4 text-(--color-muted)">
+          <span className="text-(--color-primary)">Andrej Koller</span> is a
+          software engineer from Ekibastuz, Kazakhstan.
         </p>
-        <p className="mb-4">Based in Passau, Germany.</p>
+        <p className="mb-4 text-(--color-muted)">Based in Passau, Germany.</p>
       </section>
 
       {/* Theme switcher */}
+      {/*
       <section className="mb-12 fade-in delay-2">
         <ThemeSwitcher />
       </section>
+      */}
 
       {/* Experience */}
       <section className="mb-12 fade-in delay-3">
         {experienceConfig.map((experience) => (
           <div
             key={experience.key}
-            className="flex justify-between items-baseline border-b border-border expertise-item"
+            className="flex justify-between items-baseline border-b border-(--color-border) expertise-item"
           >
-            <div>
+            <div className="flex flex-col">
               <h2 className="font-normal">{experience.company}</h2>
-              <p>{experience.role}</p>
+              <p className="text-(--color-muted)">{experience.role}</p>
             </div>
-            <p className="flex items-center whitespace-nowrap">
+            <p className="flex items-center whitespace-nowrap text-(--color-muted)">
               {experience.period}
             </p>
           </div>
@@ -42,83 +42,83 @@ export default function Home() {
 
       {/* Featured projects */}
       <section className="fade-in delay-4">
-        <h2 className="text-sm font-bold mb-4">Featured</h2>
-        <div className="mb-24">
+        <h2 className="mb-4 text-sm font-bold">Featured</h2>
+        <>
           <p className="mb-4">
-            <span className="text-color-muted">2026</span>
-            <span className="text-color-muted mx-1">—</span>
-            <span>Athanasa</span>
+            <span className="text-(--color-muted)">2026</span>
+            <span className="mx-1 text-(--color-muted)">—</span>
+            <span className="text-(--color-primary)">Athanasa</span>
           </p>
-          <div className="bg-foreground h-125 w-full rounded-xl">
+          <div className="bg-(--color-foreground) h-125 w-full rounded-xl">
             {/* Placeholder for Athanasa project image */}
           </div>
-        </div>
+        </>
       </section>
 
-      <hr className="border-t border-border mb-24" />
+      <hr className="my-24 border-t border-(--color-border)" />
 
       {/* Product & Branding */}
-      <section className="fade-in delay-5">
-        <h3 className="text-sm font-bold mb-8">Product</h3>
-        <div className="mb-24">
+      <section className="mb-24 fade-in delay-5">
+        <h3 className="mb-8 text-sm font-bold">Product</h3>
+        <>
           <p className="mb-4">
-            <span className="text-color-muted">2027</span>
-            <span className="text-color-muted mx-1">—</span>
-            <span>Sophia.js</span>
+            <span className="text-(--color-muted)">2027</span>
+            <span className="mx-1 text-(--color-muted)">—</span>
+            <span className="text-(--color-primary)">Sophia.js</span>
           </p>
-          <div className="bg-foreground h-125 w-full rounded-xl">
+          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
             {/* Placeholder for Sophia.js project image */}
           </div>
-        </div>
-        <div className="mb-24">
+        </>
+        <>
           <p className="mb-4">
-            <span className="text-color-muted">2026</span>
-            <span className="text-color-muted mx-1">—</span>
-            <span>Lofty Charts</span>
+            <span className="text-(--color-muted)">2026</span>
+            <span className="mx-1 text-(--color-muted)">—</span>
+            <span className="text-(--color-primary)">Lofty Charts</span>
           </p>
-          <div className="bg-foreground h-125 w-full rounded-xl">
+          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
             {/* Placeholder for Lofty Charts project image */}
           </div>
-        </div>
-        <div className="mb-24">
+        </>
+        <>
           <p className="mb-4">
-            <span className="text-color-muted">2026</span>
-            <span className="text-color-muted mx-1">—</span>
-            <span>Elegant Icons</span>
+            <span className="text-(--color-muted)">2026</span>
+            <span className="mx-1 text-(--color-muted)">—</span>
+            <span className="text-(--color-primary)">Elegant Icons</span>
           </p>
-          <div className="bg-foreground h-125 w-full rounded-xl">
+          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
             {/* Placeholder for Elegant Icons project image */}
           </div>
-        </div>
-        <div className="mb-24">
+        </>
+        <>
           <p className="mb-4">
-            <span className="text-color-muted">2025</span>
-            <span className="text-color-muted mx-1">—</span>
-            <span>Omelia UI</span>
+            <span className="text-(--color-muted)">2025</span>
+            <span className="mx-1 text-(--color-muted)">—</span>
+            <span className="text-(--color-primary)">Omelia UI</span>
           </p>
-          <div className="bg-foreground h-125 w-full rounded-xl">
+          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
             {/* Placeholder for Omelia UI project image */}
           </div>
-        </div>
+        </>
       </section>
-      <section className="fade-in delay-6">
-        <h3 className="text-sm font-bold mb-8">Branding</h3>
-        <div className="mb-24">
+      <section className="mb-24 fade-in delay-6">
+        <>
+          <h3 className="mb-8 text-sm font-bold">Branding</h3>
           <p className="mb-4">
-            <span className="text-color-muted">2028</span>
-            <span className="text-color-muted mx-1">—</span>
-            <span>Font</span>
+            <span className="text-(--color-muted)">2028</span>
+            <span className="mx-1 text-(--color-muted)">—</span>
+            <span className="text-(--color-primary)">Font</span>
           </p>
-          <div className="bg-foreground h-125 w-full rounded-xl">
+          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
             {/* Placeholder for Font project image */}
           </div>
-        </div>
+        </>
       </section>
 
       {/* Skills & ongoing projects */}
       <section className="mb-12 fade-in delay-7">
-        <h2 className="text-sm font-bold mb-4">Skills & Technologies</h2>
-        <p>
+        <h2 className="mb-4 text-sm font-bold">Skills & Technologies</h2>
+        <p className="mb-4 text-(--color-muted)">
           I design and build modern, performant web interfaces using HTML, SCSS,
           TypeScript, and frameworks like Angular, React, Next.js, and Vue.
           Focused on clean architecture, refined UI systems, and thoughtful
@@ -126,8 +126,8 @@ export default function Home() {
         </p>
       </section>
       <section className="mb-12 fade-in delay-8">
-        <h2 className="text-sm font-bold mb-4">Ongoing Projects</h2>
-        <p className="mb-4">
+        <h2 className="mb-4 text-sm font-bold">Ongoing Projects</h2>
+        <p className="mb-4 text-(--color-muted)">
           Builds ongoing projects spanning music, products, and open source,
           with an emphasis on tools for designers and developers.
         </p>
