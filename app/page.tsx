@@ -46,7 +46,7 @@ export default function Home() {
         <div className="mb-24">
           <p className="mb-4">
             <span className="text-color-muted">2026</span>
-            <span className="text-color-muted mx-2">—</span>
+            <span className="text-color-muted mx-1">—</span>
             <span>Athanasa</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -63,7 +63,7 @@ export default function Home() {
         <div className="mb-24">
           <p className="mb-4">
             <span className="text-color-muted">2027</span>
-            <span className="text-color-muted mx-2">—</span>
+            <span className="text-color-muted mx-1">—</span>
             <span>Sophia.js</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -73,7 +73,7 @@ export default function Home() {
         <div className="mb-24">
           <p className="mb-4">
             <span className="text-color-muted">2026</span>
-            <span className="text-color-muted mx-2">—</span>
+            <span className="text-color-muted mx-1">—</span>
             <span>Lofty Charts</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -83,7 +83,7 @@ export default function Home() {
         <div className="mb-24">
           <p className="mb-4">
             <span className="text-color-muted">2026</span>
-            <span className="text-color-muted mx-2">—</span>
+            <span className="text-color-muted mx-1">—</span>
             <span>Elegant Icons</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -93,7 +93,7 @@ export default function Home() {
         <div className="mb-24">
           <p className="mb-4">
             <span className="text-color-muted">2025</span>
-            <span className="text-color-muted mx-2">—</span>
+            <span className="text-color-muted mx-1">—</span>
             <span>Omelia UI</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
@@ -106,7 +106,7 @@ export default function Home() {
         <div className="mb-24">
           <p className="mb-4">
             <span className="text-color-muted">2028</span>
-            <span className="text-color-muted mx-2">—</span>
+            <span className="text-color-muted mx-1">—</span>
             <span>Font</span>
           </p>
           <div className="bg-foreground h-125 w-full rounded-xl">
