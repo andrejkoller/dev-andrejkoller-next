@@ -4,21 +4,6 @@
   --header-height: 12.5rem;
   --footer-height: 12.5rem;
 
-  --color-background: rgb(255, 255, 255);
-  --color-foreground: rgb(0, 0, 0);
-
-  --color-muted: rgba(0, 0, 0, 0.2);
-  --color-primary: rgba(0, 0, 0, 1);
-  --color-hover: rgba(0, 0, 0, 0.65);
-
-  --color-bg-primary: rgba(0, 0, 0, 0.04);
-
-  --color-overlay: rgba(255, 255, 255, 0.5);
-
-  --color-border: rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="dark"] {
   --color-background: rgb(0, 0, 0);
   --color-foreground: rgb(255, 255, 255);
 
@@ -31,6 +16,21 @@
   --color-overlay: rgba(0, 0, 0, 0.5);
 
   --color-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] {
+  --color-background: rgb(255, 255, 255);
+  --color-foreground: rgb(0, 0, 0);
+
+  --color-muted: rgba(0, 0, 0, 0.2);
+  --color-primary: rgba(0, 0, 0, 1);
+  --color-hover: rgba(0, 0, 0, 0.65);
+
+  --color-bg-primary: rgba(0, 0, 0, 0.04);
+
+  --color-overlay: rgba(255, 255, 255, 0.5);
+
+  --color-border: rgba(0, 0, 0, 0.1);
 }
 
 body {
