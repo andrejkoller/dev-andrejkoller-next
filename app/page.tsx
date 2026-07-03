@@ -107,10 +107,10 @@ export default function Home() {
           <p className="mb-4">
             <span className="text-(--color-muted)">2028</span>
             <span className="mx-1 text-(--color-muted)">—</span>
-            <span className="text-(--color-primary)">Font</span>
+            <span className="text-(--color-primary)">Omorfia Font</span>
           </p>
           <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
-            {/* Placeholder for Font project image */}
+            {/* Placeholder for Omorfia Font project image */}
           </div>
         </>
       </section>
