@@ -1,4 +1,3 @@
-import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 import { experienceConfig } from "@/configs/experience-config";
 import { projectLinksConfig } from "@/configs/project-links-config";
 import Link from "next/link";
@@ -60,6 +59,16 @@ export default function Home() {
       {/* Product & Branding */}
       <section className="mb-24 fade-in delay-5">
         <h3 className="mb-8 text-sm font-bold">Product</h3>
+        <>
+          <p className="mb-4">
+            <span className="text-(--color-muted)">2028</span>
+            <span className="mx-1 text-(--color-muted)">—</span>
+            <span className="text-(--color-primary)">Kleisa</span>
+          </p>
+          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
+            {/* Placeholder for Kleisa project image */}
+          </div>
+        </>
         <>
           <p className="mb-4">
             <span className="text-(--color-muted)">2027</span>
