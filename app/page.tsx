@@ -1,8 +1,9 @@
 import { experienceConfig } from "@/configs/experience-config";
+import { portfolioConfig } from "@/configs/portfolio-config";
 import { projectLinksConfig } from "@/configs/project-links-config";
 import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       {/* Introduction */}
@@ -13,13 +14,6 @@ export default function Home() {
         </p>
         <p className="mb-4 text-(--color-muted)">Based in Passau, Germany.</p>
       </section>
-
-      {/* Theme switcher */}
-      {/*
-      <section className="mb-12 fade-in delay-2">
-        <ThemeSwitcher />
-      </section>
-      */}
 
       {/* Experience */}
       <section className="mb-12 fade-in delay-3">
@@ -54,75 +48,38 @@ export default function Home() {
         </>
       </section>
 
-      <hr className="my-24 border-t border-(--color-border)" />
+      <hr className="my-12 border-t border-(--color-border)" />
 
       {/* Product & Branding */}
-      <section className="mb-24 fade-in delay-5">
-        <h3 className="mb-8 text-sm font-bold">Product</h3>
-        <>
-          <p className="mb-4">
-            <span className="text-(--color-muted)">2028</span>
-            <span className="mx-1 text-(--color-muted)">—</span>
-            <span className="text-(--color-primary)">Kleisa</span>
-          </p>
-          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
-            {/* Placeholder for Kleisa project image */}
-          </div>
-        </>
-        <>
-          <p className="mb-4">
-            <span className="text-(--color-muted)">2027</span>
-            <span className="mx-1 text-(--color-muted)">—</span>
-            <span className="text-(--color-primary)">Sophia.js</span>
-          </p>
-          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
-            {/* Placeholder for Sophia.js project image */}
-          </div>
-        </>
-        <>
-          <p className="mb-4">
-            <span className="text-(--color-muted)">2026</span>
-            <span className="mx-1 text-(--color-muted)">—</span>
-            <span className="text-(--color-primary)">Lofty Charts</span>
-          </p>
-          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
-            {/* Placeholder for Lofty Charts project image */}
-          </div>
-        </>
-        <>
-          <p className="mb-4">
-            <span className="text-(--color-muted)">2026</span>
-            <span className="mx-1 text-(--color-muted)">—</span>
-            <span className="text-(--color-primary)">Elegant Icons</span>
-          </p>
-          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
-            {/* Placeholder for Elegant Icons project image */}
-          </div>
-        </>
-        <>
-          <p className="mb-4">
-            <span className="text-(--color-muted)">2025</span>
-            <span className="mx-1 text-(--color-muted)">—</span>
-            <span className="text-(--color-primary)">Omelia UI</span>
-          </p>
-          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
-            {/* Placeholder for Omelia UI project image */}
-          </div>
-        </>
-      </section>
-      <section className="mb-24 fade-in delay-6">
-        <>
-          <h3 className="mb-8 text-sm font-bold">Branding</h3>
-          <p className="mb-4">
-            <span className="text-(--color-muted)">2028</span>
-            <span className="mx-1 text-(--color-muted)">—</span>
-            <span className="text-(--color-primary)">Omorfia Font</span>
-          </p>
-          <div className="mb-24 bg-(--color-foreground) h-125 w-full rounded-xl">
-            {/* Placeholder for Omorfia Font project image */}
-          </div>
-        </>
-      </section>
+      {portfolioConfig.map((section, sectionIndex) => (
+        <section
+          key={section.key}
+          className={`mb-24 fade-in delay-${5 + sectionIndex}`}
+        >
+          <h3 className="mb-8 text-sm font-bold">{section.label}</h3>
+          {section.projects.map((project) => (
+            <div key={project.key} className="mb-24">
+              <p className="mb-4">
+                <span className="text-(--color-muted)">{project.year}</span>
+                <span className="mx-1 text-(--color-muted)">—</span>
+                <span className="text-(--color-primary)">{project.name}</span>
+              </p>
+              <div
+                className={
+                  project.placeholders > 1 ? "flex flex-col gap-4" : ""
+                }
+              >
+                {Array.from({ length: project.placeholders }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="bg-(--color-foreground) h-125 w-full rounded-xl"
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </section>
+      ))}
 
       {/* Skills & ongoing projects */}
       <section className="mb-12 fade-in delay-7">
