@@ -5,11 +5,6 @@ export const footerLinksConfig = [
     href: "https://x.com/andrejkoller",
   },
   {
-    key: "dribbble",
-    name: "Dribbble",
-    href: "https://dribbble.com/andrejkoller",
-  },
-  {
     key: "github",
     name: "GitHub",
     href: "https://github.com/andrejkoller",

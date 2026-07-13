@@ -7,11 +7,10 @@ export const ThemeSwitcher = () => {
 
   if (!mounted) return null;
 
-  const nextTheme = theme === "dark" ? "Light" : "Dark";
+  const nextTheme = theme === "dark" ? "☀︎" : "☾";
 
   return (
     <p className="text-sm text-color-text-muted select-none">
-      Switch to{" "}
       <button
         onClick={switchTheme}
         className="cursor-pointer text-text-primary transition-colors"
