@@ -10,9 +10,11 @@ export default function HomePage() {
       <section className="mb-12 fade-in delay-1">
         <p className="mb-4 text-(--color-muted)">
           <span className="text-(--color-primary)">Andrej Koller</span> is a
-          software engineer from Ekibastuz, Kazakhstan.
+          designer and frontend engineer from Ekibastuz, Kazakhstan.
         </p>
-        <p className="mb-4 text-(--color-muted)">Based in Passau, Germany.</p>
+        <div className="flex">
+          <p className="mb-4 text-(--color-muted)">Based in Passau, Germany.</p>
+        </div>
       </section>
 
       {/* Experience */}
