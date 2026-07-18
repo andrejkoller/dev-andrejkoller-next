@@ -17,4 +17,10 @@ export const projectLinksConfig = [
     url: "https://linktr.ee/eternalbravery",
     isExternal: true,
   },
+  {
+    key: "qalamis",
+    name: "Qalamis",
+    url: "https://linktr.ee/qalamis",
+    isExternal: true,
+  },
 ];
