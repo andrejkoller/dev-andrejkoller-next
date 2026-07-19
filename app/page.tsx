@@ -35,23 +35,6 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* Featured projects */}
-      <section className="fade-in delay-4">
-        <h2 className="mb-4 text-sm font-bold">Featured</h2>
-        <>
-          <p className="mb-4">
-            <span className="text-(--color-muted)">2026</span>
-            <span className="mx-1 text-(--color-muted)">—</span>
-            <span className="text-(--color-primary)">Athanasa</span>
-          </p>
-          <div className="bg-(--color-foreground) h-125 w-full rounded-xl">
-            {/* Placeholder for Athanasa project image */}
-          </div>
-        </>
-      </section>
-
-      <hr className="my-12 border-t border-(--color-border)" />
-
       {/* Product & Branding */}
       {portfolioConfig.map((section, sectionIndex) => (
         <section
@@ -62,19 +45,23 @@ export default function HomePage() {
           {section.projects.map((project) => (
             <div key={project.key} className="mb-24">
               <p className="mb-4">
-                <span className="text-(--color-muted)">{project.year}</span>
-                <span className="mx-1 text-(--color-muted)">—</span>
                 <span className="text-(--color-primary)">{project.name}</span>
+                <span className="mx-1 text-(--color-muted)">—</span>
+                <span className="text-(--color-muted)">
+                  {project.description}
+                </span>
               </p>
               <div
                 className={
-                  project.placeholders > 1 ? "flex flex-col gap-4" : ""
+                  project.images && project.images > 1
+                    ? "flex flex-col gap-4"
+                    : ""
                 }
               >
-                {Array.from({ length: project.placeholders }).map((_, i) => (
+                {Array.from({ length: project.images ?? 0 }).map((_, i) => (
                   <div
                     key={i}
-                    className="bg-(--color-foreground) h-125 w-full rounded-xl"
+                    className="bg-(--color-foreground) h-125 w-full rounded-2xl"
                   />
                 ))}
               </div>
@@ -96,7 +83,7 @@ export default function HomePage() {
       <section className="mb-12 fade-in delay-8">
         <h2 className="mb-4 text-sm font-bold">Ongoing Projects</h2>
         <p className="mb-4 text-(--color-muted)">
-          Builds ongoing projects spanning music, products, and open source,
+          Builds ongoing projects spanning music, storytelling, and open source,
           with an emphasis on tools for designers and developers.
         </p>
         <ul className="space-y-2">

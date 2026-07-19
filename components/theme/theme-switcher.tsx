@@ -51,6 +51,8 @@ export const ThemeSwitcher = () => {
     <button
       onClick={switchTheme}
       className="cursor-pointer text-(--color-primary)"
+      title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
     >
       {nextThemeIcon}
     </button>

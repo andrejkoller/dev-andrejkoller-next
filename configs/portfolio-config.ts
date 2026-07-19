@@ -1,8 +1,8 @@
 export type PortfolioProject = {
   key: string;
   name: string;
-  year: number;
-  placeholders: number;
+  description?: string;
+  images?: number;
 };
 
 export type PortfolioSection = {
@@ -13,24 +13,45 @@ export type PortfolioSection = {
 
 export const portfolioConfig: PortfolioSection[] = [
   {
-    key: "product",
-    label: "Product",
+    key: "products",
+    label: "Products",
     projects: [
-      { key: "kleisa", name: "Kleisa", year: 2028, placeholders: 4 },
-      { key: "sophia-js", name: "Sophia.js", year: 2027, placeholders: 3 },
+      {
+        key: "athanasa",
+        name: "Athanasa",
+        description: "Cloud Platform",
+        images: 7,
+      },
+      {
+        key: "kleisa",
+        name: "Kleisa",
+        description: "Identity & Security",
+        images: 6,
+      },
+      {
+        key: "sophia-js",
+        name: "Sophia.js",
+        description: "TypeScript Toolkit",
+        images: 4,
+      },
       {
         key: "lofty-charts",
         name: "Lofty Charts",
-        year: 2026,
-        placeholders: 1,
+        description: "Charting Library",
+        images: 3,
       },
       {
         key: "elegant-icons",
         name: "Elegant Icons",
-        year: 2026,
-        placeholders: 1,
+        description: "SVG Icon Library",
+        images: 3,
       },
-      { key: "omelia-ui", name: "Omelia UI", year: 2025, placeholders: 2 },
+      {
+        key: "omelia-ui",
+        name: "Omelia UI",
+        description: "React Component Library",
+        images: 5,
+      },
     ],
   },
   {
@@ -40,8 +61,8 @@ export const portfolioConfig: PortfolioSection[] = [
       {
         key: "omorfia-font",
         name: "Omorfia Font",
-        year: 2028,
-        placeholders: 3,
+        description: "Typeface Design",
+        images: 4,
       },
     ],
   },
