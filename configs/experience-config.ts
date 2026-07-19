@@ -1,14 +1,25 @@
+export interface Experience {
+  key: string;
+  company: string;
+  role: string;
+  from: string;
+  to: string;
+  period?: string;
+}
+
 export const experienceConfig = [
   {
     key: "freelance",
     company: "Freelance",
     role: "Software Engineer",
-    period: "2025-Present",
+    from: "2025",
+    to: "Present",
   },
   {
     key: "icunet",
     company: "ICUnet",
     role: "Software Developer, Training",
-    period: "2022-2025",
+    from: "2022",
+    to: "2025",
   },
 ];

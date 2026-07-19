@@ -1,3 +1,9 @@
+export interface FooterLink {
+  key: string;
+  name: string;
+  href: string;
+}
+
 export const footerLinksConfig = [
   {
     key: "x",
