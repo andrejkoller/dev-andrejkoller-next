@@ -72,7 +72,7 @@ svg:hover {
 
 .expertise-item {
   transition: border-color 0.3s ease;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   position: relative;
 }
 
@@ -122,10 +122,6 @@ svg:hover {
 
 .delay-7 {
   animation-delay: 0.7s;
-}
-
-.delay-8 {
-  animation-delay: 0.8s;
 }
 
 @keyframes fadeIn {

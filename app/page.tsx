@@ -7,18 +7,16 @@ export default function HomePage() {
   return (
     <>
       {/* Introduction */}
-      <section className="mb-12 fade-in delay-1">
-        <p className="mb-4 text-(--color-muted)">
+      <section className="flex flex-col gap-4 mb-16 fade-in delay-1">
+        <p className="text-(--color-muted)">
           <span className="text-(--color-primary)">Andrej Koller</span> is a
           designer and frontend engineer from Ekibastuz, Kazakhstan.
         </p>
-        <div className="flex">
-          <p className="mb-4 text-(--color-muted)">Based in Passau, Germany.</p>
-        </div>
+        <p className="text-(--color-muted)">Based in Passau, Germany.</p>
       </section>
 
       {/* Experience */}
-      <section className="mb-12 fade-in delay-3">
+      <section className="flex flex-col gap-4 mb-16 fade-in delay-2">
         {experienceConfig.map((experience) => (
           <div
             key={experience.key}
@@ -37,11 +35,11 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* Product & Branding */}
+      {/* Products & Branding */}
       {portfolioConfig.map((section, sectionIndex) => (
         <section
           key={section.key}
-          className={`mb-24 fade-in delay-${5 + sectionIndex}`}
+          className={`fade-in delay-${3 + sectionIndex}`}
         >
           <h3 className="mb-8 text-sm font-bold">{section.label}</h3>
           {section.projects.map((project) => (
@@ -73,18 +71,18 @@ export default function HomePage() {
       ))}
 
       {/* Skills & ongoing projects */}
-      <section className="mb-12 fade-in delay-7">
-        <h2 className="mb-4 text-sm font-bold">Skills & Technologies</h2>
-        <p className="mb-4 text-(--color-muted)">
+      <section className="flex flex-col gap-4 mb-12 fade-in delay-5">
+        <h2 className="text-sm font-bold">Skills & Technologies</h2>
+        <p className="text-(--color-muted)">
           I design and build modern, performant web interfaces using HTML, SCSS,
           TypeScript, and frameworks like Angular, React, Next.js, and Vue.
           Focused on clean architecture, refined UI systems, and thoughtful
           digital experiences crafted with TailwindCSS and Figma.
         </p>
       </section>
-      <section className="mb-12 fade-in delay-8">
-        <h2 className="mb-4 text-sm font-bold">Ongoing Projects</h2>
-        <p className="mb-4 text-(--color-muted)">
+      <section className="flex flex-col gap-4 mb-12 fade-in delay-6">
+        <h2 className="text-sm font-bold">Ongoing Projects</h2>
+        <p className="text-(--color-muted)">
           Builds ongoing projects spanning music, storytelling, and open source,
           with an emphasis on tools for designers and developers.
         </p>
