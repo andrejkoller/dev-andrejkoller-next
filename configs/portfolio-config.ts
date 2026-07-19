@@ -1,15 +1,15 @@
-export type PortfolioProject = {
+export interface PortfolioProject {
   key: string;
   name: string;
   description?: string;
   images?: number;
-};
+}
 
-export type PortfolioSection = {
+export interface PortfolioSection {
   key: string;
   label: string;
   projects: PortfolioProject[];
-};
+}
 
 export const portfolioConfig: PortfolioSection[] = [
   {

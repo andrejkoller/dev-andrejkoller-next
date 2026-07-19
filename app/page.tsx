@@ -29,7 +29,9 @@ export default function HomePage() {
               <p className="text-(--color-muted)">{experience.role}</p>
             </div>
             <p className="flex items-center whitespace-nowrap text-(--color-muted)">
-              {experience.period}
+              <span>{experience.from}</span>
+              <span className="mx-1">—</span>
+              <span>{experience.to}</span>
             </p>
           </div>
         ))}
@@ -61,7 +63,7 @@ export default function HomePage() {
                 {Array.from({ length: project.images ?? 0 }).map((_, i) => (
                   <div
                     key={i}
-                    className="bg-(--color-foreground) h-125 w-full rounded-2xl"
+                    className="bg-(--color-foreground) h-112.5 w-full rounded-2xl"
                   />
                 ))}
               </div>

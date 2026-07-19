@@ -1,3 +1,10 @@
+export interface ProjectLink {
+  key: string;
+  name: string;
+  url: string;
+  isExternal: boolean;
+}
+
 export const projectLinksConfig = [
   {
     key: "athanasa",
