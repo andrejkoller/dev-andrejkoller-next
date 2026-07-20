@@ -29,6 +29,18 @@ export const portfolioConfig: PortfolioSection[] = [
         images: 6,
       },
       {
+        key: "qalamis",
+        name: "Qalamis",
+        description: "Digital Library Platform",
+        images: 5,
+      },
+      {
+        key: "omelia-ui",
+        name: "Omelia UI",
+        description: "React Component Library",
+        images: 5,
+      },
+      {
         key: "sophia-js",
         name: "Sophia.js",
         description: "TypeScript Toolkit",
@@ -46,12 +58,6 @@ export const portfolioConfig: PortfolioSection[] = [
         description: "SVG Icon Library",
         images: 3,
       },
-      {
-        key: "omelia-ui",
-        name: "Omelia UI",
-        description: "React Component Library",
-        images: 5,
-      },
     ],
   },
   {
@@ -62,6 +68,18 @@ export const portfolioConfig: PortfolioSection[] = [
         key: "omorfia-font",
         name: "Omorfia Font",
         description: "Typeface Design",
+        images: 4,
+      },
+      {
+        key: "eternal-bravery",
+        name: "Eternal Bravery",
+        description: "Epic Science Fantasy Universe",
+        images: 5,
+      },
+      {
+        key: "fading-hell",
+        name: "Fading Hell",
+        description: "Hardcore Punk / Metalcore Band",
         images: 4,
       },
     ],
